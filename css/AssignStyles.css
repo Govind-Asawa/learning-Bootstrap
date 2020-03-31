@@ -1,0 +1,22 @@
+.jumbotron
+{
+    margin:5px;
+    background-color: rgba(134, 56, 207,0.7);
+}
+
+.row-header
+{
+    padding: 0px 0px 0px 20px;
+}
+
+.row-content{
+    border-bottom: 2px ridge rgba(0, 0, 0, 0.2);
+    min-height: 200px;
+    padding: 50px 0px 50px 20px;
+}
+
+.footer
+{
+    padding: 10px 0px;
+    background-color: rgba(156, 34, 226, 0.377)
+}
