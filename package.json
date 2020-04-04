@@ -1,0 +1,23 @@
+{
+  "name": "learning-bootstrap",
+  "version": "1.0.0",
+  "description": "created as a part of learning bootstrap and node",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Govind-Asawa/learning-Bootstrap.git"
+  },
+  "author": "Govind-Asawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Govind-Asawa/learning-Bootstrap/issues"
+  },
+  "homepage": "https://github.com/Govind-Asawa/learning-Bootstrap#readme",
+  "dependencies": {
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0"
+  }
+}
