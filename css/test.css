@@ -1,0 +1,17 @@
+.row-header
+{
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.row-content{
+    border-bottom: 2px ridge rgba(0,0,0, 0.3);
+    padding: 50px 0px;
+    min-height: 200px;
+}
+
+.footer-content{
+    background-color: rgba(201, 158, 40, 0.3);
+    padding:50px 0px 20px 0px;
+}
+

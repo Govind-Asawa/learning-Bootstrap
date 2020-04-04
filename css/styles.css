@@ -1,17 +1,30 @@
-.row-header
-{
+.row-header {
     margin: 0px auto;
     padding: 0px auto;
 }
 
-.row-content{
-    border-bottom: 2px ridge rgba(0,0,0, 0.3);
-    padding: 50px 0px;
-    min-height: 200px;
+.row-content {
+    margin: 0px auto;   
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge rgba(0,0,0,0.3);
+    min-height: 300px;
 }
 
-.footer-content{
-    background-color: rgba(201, 158, 40, 0.3);
-    padding:50px 0px 20px 0px;
+.footer {
+    background-color: #D1C4E9;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
 }
 
+.jumbotron {
+    padding: 70px 30px;
+    margin: 0px auto;
+    background-color: #9575CD;
+    color: floralwhite
+}
+
+.address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
