@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -210,9 +210,17 @@
                     <a href="#mycarousel" role="button" data-slide="next" class="carousel-control-next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                    
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-block btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-sm btn-success" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
-
         </div>
 
         <div class="row row-content align-items-center">
@@ -303,9 +311,19 @@
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
 </body>
 </html>
