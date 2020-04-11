@@ -26,8 +26,9 @@
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul>
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginmodal">
-                            <span class="fa fa-sign-in"></span> Login</a>
+                        <a id="loginmodal-toggler">
+                            <span class="fa fa-sign-in"></span> Login
+                        </a>
                     </span>
                 </div>
             </div>
@@ -60,11 +61,13 @@
                                 <label for="rem_me" class="form-check-label">Remember me</label>
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <div class="col-12 offset-sm-2 col-sm">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Sign in</button>
+                            </div>
+                        </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-success">Login</button>
                 </div>
             </div>
         </div>
@@ -158,8 +161,7 @@
                     <img src="img/logo.png"  alt="logo">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a href="#reserve_form" class="btn btn-warning nav-link btn-sm d-block"
-                        data-target="#reservemodal" data-toggle="modal">
+                    <a  id="reservemodal-toggler" class="btn btn-warning nav-link btn-sm d-block">
                         Reserve Table</a>
                 </div>
             </div>
@@ -320,7 +322,12 @@
                     $("#mycarousel").carousel('cycle');
                 $('#carouselButton > span').toggleClass('fa-pause fa-play');
             });
-           
+            $('#loginmodal-toggler').click(function(){
+                $('#loginmodal').modal('toggle');
+            });
+            $('#reservemodal-toggler').click(function(){
+                $('#reservemodal').modal('toggle');
+            });
         });
     </script>
 </body>
